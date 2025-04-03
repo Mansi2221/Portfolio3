@@ -3,42 +3,70 @@ body {
     background-color: #121212;
     color: #E0E0E0;
     margin: 0;
-    display: flex;
+    padding: 0;
 }
-
-.sidebar {
-    width: 250px;
+header {
     background: #1E1E1E;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #D0B49F;
+}
+.menu-btn {
+    font-size: 30px;
+    cursor: pointer;
+}
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #1E1E1E;
     position: fixed;
-    height: 100%;
-    overflow-y: auto;
+    left: -250px;
+    top: 0;
+    padding-top: 50px;
+    transition: 0.3s;
 }
-
-.sidebar h2 {
-    color: #D0B49F;
-    text-align: center;
-}
-
-.sidebar nav a {
+.sidebar a {
     display: block;
+    padding: 15px;
     color: #D0B49F;
-    padding: 10px;
     text-decoration: none;
-    font-weight: bold;
 }
-
-.sidebar nav a:hover {
+.sidebar a:hover {
     background: #D0B49F;
     color: #121212;
 }
-
-.main-content {
-    margin-left: 250px;
-    padding: 20px;
-    width: calc(100% - 250px);
+.close-btn {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    text-align: right;
 }
-
-section {
-    margin-bottom: 50px;
+.profile-section {
+    text-align: center;
+    padding: 80px 20px;
+}
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #D0B49F;
+}
+.section {
+    padding: 80px 20px;
+}
+.card-custom {
+    background: #1E1E1E;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-section {
+    background-color: #D0B49F;
+    color: #121212;
+    padding: 50px;
+    text-align: center;
 }
