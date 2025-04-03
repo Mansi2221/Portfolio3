@@ -5,51 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mansi Patil | Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <style>
-        /* CSS styles will be added here */
-    </style>
-</head>
-<body>
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <h2>Mansi Patil</h2>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#freelancing">Freelancing</a>
-            <a href="#organizations">Organizations</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </div>
-
-    <!-- Main Content -->
-    <div class="main-content">
-        <section id="home">
-            <!-- Home content -->
-        </section>
-        <section id="education">
-            <!-- Education content -->
-        </section>
-        <section id="experience">
-            <!-- Experience content -->
-        </section>
-        <section id="freelancing">
-            <!-- Freelancing content -->
-        </section>
-        <section id="organizations">
-            <!-- Organizations content -->
-        </section>
-        <section id="contact">
-            <!-- Contact content -->
-        </section>
-    </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="close-btn" onclick="toggleSidebar()">×</div>
+        <a href="#home">Home</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Header with menu button -->
+    <header>
+        <span class="menu-btn" onclick="toggleSidebar()">☰</span>
+        <h3>Mansi Patil</h3>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section id="home" class="profile-section" data-aos="fade-down">
+            <h1>Mansi Patil</h1>
+            <p>Business Analyst | Data Scientist | Web Developer | Freelancing Strategist</p>
+            <img src="profile.jpg" alt="Mansi Patil" class="profile-img">
+        </section>
+
+        <section id="experience" class="section" data-aos="fade-up">
+            <h2>Professional Experience</h2>
+            <div class="card-custom" data-aos="fade-right">
+                <h5>Business Analyst, P-Ninja Infotech</h5>
+                <p>August 2023 – Present</p>
+                <p>Led multiple analytics projects improving decision-making, sales, and inventory management.</p>
+            </div>
+            <div class="card-custom" data-aos="fade-left">
+                <h5>Web Development Intern, Invictus Web Solutions</h5>
+                <p>March 2023 – July 2023</p>
+                <p>Developed responsive websites, implemented backend solutions, and enhanced SEO.</p>
+            </div>
+        </section>
+
+        <section id="education" class="section" data-aos="fade-right">
+            <h2>Education</h2>
+            <p>B.Tech Electronics & Telecommunication Engineering | CGPA: 8.41/10</p>
+            <p>Relevant Coursework: Python Programming, Deep Learning & AI, Statistics, Calculus, Linear Algebra</p>
+        </section>
+
+        <section id="projects" class="section" data-aos="fade-left">
+            <h2>Projects</h2>
+            <div class="card-custom">
+                <h5>Data Analytics Dashboard</h5>
+                <p>Built an interactive data visualization dashboard using Python and Tableau.</p>
+            </div>
+            <div class="card-custom">
+                <h5>Personal Branding Website</h5>
+                <p>Developed a personal branding website for clients using HTML, CSS, and JavaScript.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section" data-aos="fade-up">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:mansianilpatil2425@gmail.com">mansianilpatil2425@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/MansiPatil" target="_blank">linkedin.com/in/MansiPatil</a></p>
+            <p>Phone: 8767248692</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
+
